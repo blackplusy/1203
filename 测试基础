@@ -160,11 +160,47 @@
 					时间
 					服务器软件版本
 				响应体数据
-
-
-
+			断点调试(bpu)
+				伪响应
+					bpu http://ecshop.test1.shopex123.com
+					取消:bpu
+				伪请求
+					bpu http://ecshop.test1.shopex123.com/user.php
 	b.域名    s.taobao.com
+		FQDN(完全合格域名)
+		DNS(域名解析服务器)
+		1>正向解析(域名--IP)
+			11>ping+网站名
+				win+r--cmd(打开命令提示符)--ping www.baidu.com
+			12>nslookup+网站名
+				win+r--cmd--nslookup www.baidu.com
+		2>反向解析(IP--域名)
+			win+r--cmd--nslookup 14.215.177.38
 	c.端口    :80
+		区分应用层进程的标识
+		每种软件端口不一致，一台电脑中不能运行两个端口一样的应用
+		oracle             1521
+		mysql              3306
+		apache/iis/nginx   80
+		tomcat             8080
+		windows下查看端口的命令
+			win+r--cmd--netstat -an 
 	d.虚拟目录 goods
 	e.访问的文件 search
 	f.访问文件所使用参数 q=lv
+9.ecshop电商项目部署
+	a.下载安装phpstudy2016
+	b.ecshop项目开发环境
+		开发语言     php
+		web服务器    apache
+		数据库服务器  mysql
+	c.下载解压ecshop.zip压缩包
+	d.复制解压好的文件夹到phpstudy的WWW文件夹下
+	e.浏览器中输入127.0.0.1/ecshop1按照提示安装	
+		注意:配置安装系统
+		数据库账号:
+			数据库主机  localhost
+			端口号      3306
+			用户名      root
+			密码        root
+			数据库名    test
